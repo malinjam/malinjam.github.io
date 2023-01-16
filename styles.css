@@ -17,15 +17,39 @@ body{
     padding: 2%;
     text-align: left;
     color: #71BF79;
-    font-size: 4vw;
+    font-size: 3vw;
     font-family: 'Space Grotesk';
     font-weight: 300;
 }
 .edu-box{
     background-color: #233B52;
     color: #71BF79;
+    font-size: 2vw;
 }
+
+.portfolio-link{
+    background-color: #345970;
+    border-radius: 25%;
+    width: 30vw;
+    height: 30vw;
+    border-width: 0px;
+    text-align: center;
+    font-weight: 700;
+    
+}
+
 .exp-box{
     background-color: #233B52;
     color: #71BF79;
+    font-size: 2vw;
+    display: flex;
+    flex-direction: row;
+}
+
+.exp1{
+width: 50%;
+}
+.exp2{
+    width: 25%;
+    background-color: #345970;
 }
