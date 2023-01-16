@@ -7,14 +7,25 @@ body{
     display: flex;
     flex-direction: column;
     row-gap: 5%;
+    font-family: 'Space Grotesk';
+    font-weight: 300;
+    padding-right: 30%;
 }
 .intro-box{
-    background-color: #345970;
+    background-color: #233B52;
     margin: 2%;
     padding: 2%;
     text-align: left;
     color: #71BF79;
-    font-size: 40vw;
+    font-size: 4vw;
     font-family: 'Space Grotesk';
     font-weight: 300;
+}
+.edu-box{
+    background-color: #233B52;
+    color: #71BF79;
+}
+.exp-box{
+    background-color: #233B52;
+    color: #71BF79;
 }
