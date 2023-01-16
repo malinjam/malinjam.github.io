@@ -25,31 +25,41 @@ body{
     background-color: #233B52;
     color: #71BF79;
     font-size: 2vw;
+    margin: 2%;
+    padding: 2%;
 }
 
 .portfolio-link{
     background-color: #345970;
-    border-radius: 25%;
+    border-radius: 100%;
     width: 30vw;
     height: 30vw;
     border-width: 0px;
     text-align: center;
     font-weight: 700;
-    
+
+
 }
 
 .exp-box{
-    background-color: #233B52;
     color: #71BF79;
     font-size: 2vw;
     display: flex;
     flex-direction: row;
+    margin: 2%;
+    padding: 2%;
 }
 
 .exp1{
 width: 50%;
+background-color: #233B52;
+padding: 2%;
+border-top-right-radius: 100%;
+border-bottom-right-radius: 100%;
 }
+
 .exp2{
     width: 25%;
     background-color: #345970;
+    padding: 2%;
 }
