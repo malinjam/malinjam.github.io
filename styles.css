@@ -4,30 +4,29 @@ body {
   background-color: #1a2b3d;
   display: flex;
   flex-direction: column;
-  row-gap: 5%;
   font-family: "Space Grotesk";
   color: #71bf79;
   font-weight: 300;
+  margin: 15%;
 }
 
 .box-grid {
   display: grid;
   grid-template-columns: 33% 33% 33%;
   grid-template-rows: 100%;
-  margin-top:3%;
-  margin-bottom: 3%;
+  margin-top:5%;
+  margin-bottom: 5%;
 }
 .intro-box {
   grid-column: 1 / 4;
   grid-row: 1 / 1;
   display: inline;
   background-color: #233b52;
-  margin: 2%;
   margin-right: 10vw;
   margin-bottom: 10vw;
   padding: 2%;
   text-align: left;
-  font-size: 5vw;
+  font-size: 3vw;
   font-family: "Space Grotesk";
   font-weight: 300;
   z-index: 0;
@@ -37,11 +36,12 @@ body {
   justify-self: right;
   grid-column: 3 / 3;
   grid-row: 1 / 1;
-  border: 3px dashed #c5dcbd;
-  padding: 2%;
+  border: 2px dashed #c5dcbd;
+  padding: 5%;
   border-radius: 100%;
   z-index: 1;
-  margin-top: 60%;
+  margin-top: 35%;
+  margin-right: 8%;
 }
 
 .edu-intro {
@@ -50,7 +50,7 @@ body {
   display: flex;
   flex-direction: row;
   color: #71bf79;
-  height: 25vw;
+  height: 18vw;
   z-index: 0;
 }
 .edu-intro-intra {
@@ -59,31 +59,31 @@ body {
   padding-top: 4vw;
   padding-left: 2%;
   padding-right: 15vw;
-  font-size: 3vw;
+  font-size: 2vw;
   text-align: left;
 }
 .edu-intro-edge-flex {
   display: flex;
   flex-direction: column;
-  width: 55%;
+  width: 48%;
 }
 .edu-intro-edge {
-  border-top-right-radius: 250px;
+  border-top-right-radius: 450px;
   background-color: #c5dcbd;
   height: 100%;
   z-index: 1;
 }
 .edu-intro-bottom {
   background-color: #1a2b3d;
-  height: 40%;
+  height: 60%;
   z-index: 2;
 }
 
 .portfolio-link {
   background-color: #345970;
   border-radius: 100%;
-  width: 13vw;
-  height: 13vw;
+  width: 7vw;
+  height: 7vw;
   padding: 5vw;
   display: flex;
   border-width: 0px;
@@ -91,7 +91,7 @@ body {
   align-items: center;
   justify-content: center;
   font-weight: 700;
-  font-size: 3vw;
+  font-size: 2vw;
   color: #ff6800;
   text-decoration: none;
   margin: 0vw;
@@ -101,15 +101,15 @@ body {
 .link-border {
   border: 2px dashed #71bf79;
   border-radius: 100%;
-  width: 23vw;
-  height: 23vw;
-  padding: 2%;
+  width: 17vw;
+  height: 17vw;
+  padding: 5%;
   grid-column: 3 / 3;
   grid-row: 1 / 1;
   z-index: 3;
   justify-self: center;
   align-self: center;
-  margin-top: 6vw;
+  margin-top: 3vw;
   margin-right: 10%;
 }
 
@@ -127,32 +127,50 @@ body {
   padding: 3vh;
   border-top-right-radius: 300px;
   border-bottom-right-radius: 300px;
-  height: 28vh;
-  width: 40vh;
-  padding-right: 50%;
+  height: 25vh;
+  width: 30vh;
+  padding-right: 65%;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: left;
-  font-size: 3vw;
+  font-size: 2vw;
   color: #71bf79;
   margin: 2vw;
+  grid-column: 1 / 2;
+  grid-row: 1 / 1;
 }
 
 .exp-triangle {
-    margin-top: 10%;
+  margin-top: 2vw;
+  justify-self: right;
+  height: 31vh;
+  grid-column: 2 / 2;
+  grid-row: 1 / 1;
 }
 
 .exp2 {
   margin-top: 2vw;
   background-color: #345970;
   padding: 3vh;
-  height: 28vh;
+  padding-right: -10%;
+  height: 25vh;
   width: 80%;
-  font-size: 2vw;
+  font-size: 1.5vw;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: left;
   color: #71bf79;
+  grid-column: 3 / 4;
+  grid-row: 1 / 1;
+}
+
+.exp-circle{
+  z-index: -1;
+  grid-column: 2 / 2;
+  grid-row: 1 / 1;
+  justify-self: right;
+  padding-right: 15%;
+  margin-top: 0.5vw;
 }
