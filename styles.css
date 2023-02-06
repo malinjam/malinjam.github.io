@@ -217,6 +217,7 @@ li {
   background-color: #233b52;
   margin: 1%;
   padding: 2%;
+  padding-right: 10%;
   border-top-right-radius: 300px;
   border-bottom-right-radius: 300px;
 }
