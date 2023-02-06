@@ -14,7 +14,7 @@ body {
   display: grid;
   grid-template-columns: 33% 33% 33%;
   grid-template-rows: 100%;
-  margin-top:5%;
+  margin-top: 5%;
   margin-bottom: 5%;
 }
 .intro-box {
@@ -82,9 +82,9 @@ body {
 .portfolio-link {
   background-color: #345970;
   border-radius: 100%;
-  width: 7vw;
-  height: 7vw;
-  padding: 5vw;
+  width: 11vw;
+  height: 11vw;
+  padding: 3vw;
   display: flex;
   border-width: 0px;
   text-align: center;
@@ -92,10 +92,13 @@ body {
   justify-content: center;
   font-weight: 700;
   font-size: 2vw;
-  color: #ff6800;
+  color: #71bf79;
   text-decoration: none;
   margin: 0vw;
   justify-self: center;
+}
+.portfolio-link:hover {
+  color: #ff6800;
 }
 
 .link-border {
@@ -127,9 +130,8 @@ body {
   padding: 3vh;
   border-top-right-radius: 300px;
   border-bottom-right-radius: 300px;
-  height: 25vh;
-  width: 30vh;
-  padding-right: 85%;
+  width: 30vw;
+  padding-right: 5vw;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -137,14 +139,15 @@ body {
   font-size: 2vw;
   color: #71bf79;
   margin: 2vw;
+  height: 70%;
   grid-column: 1 / 2;
   grid-row: 1 / 1;
+  height: 17vw;
 }
 
 .exp-triangle {
   margin-top: 2vw;
   justify-self: right;
-  height: 31vh;
   grid-column: 2 / 2;
   grid-row: 1 / 1;
 }
@@ -154,9 +157,9 @@ body {
   background-color: #345970;
   padding: 3vh;
   padding-right: -10%;
-  height: 25vh;
   width: 80%;
   font-size: 1.5vw;
+  height: 70%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -164,13 +167,76 @@ body {
   color: #71bf79;
   grid-column: 3 / 4;
   grid-row: 1 / 1;
+  height: 17vw;
 }
 
-.exp-circle{
+.exp-circle {
   z-index: -1;
   grid-column: 2 / 2;
   grid-row: 1 / 1;
   justify-self: right;
-  padding-right: 29%;
-  margin-top: 1vw;
+  padding-right: 3vw;
+}
+
+.work-textbox {
+  font-size: 2vw;
+  font-weight: 500;
+  margin: 10%;
+}
+.color-textbox {
+  background-color: #233b52;
+  color: #c5dcbd;
+  font-size: inherit;
+  font-weight: 300;
+  padding: 2%;
+}
+
+.work-link {
+  color: #71bf79;
+  font-weight: 600;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  text-decoration: none;
+}
+
+.work-link:hover {
+  color: #ff6800;
+}
+
+ul {
+  list-style: none;
+  padding-left: 20vw;
+}
+
+li {
+  font-weight: 300;
+  font-size: 1.5vw;
+  color: #71bf79;
+  background-color: #233b52;
+  margin: 1%;
+  padding: 2%;
+  border-top-right-radius: 300px;
+  border-bottom-right-radius: 300px;
+}
+
+.bullet-points {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+.container-bulletpoint-img {
+  display: flex;
+  flex-direction: row;
+}
+
+.DiVa-link {
+  color: #71bf79;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.DiVa-link:hover {
+  color: #ff6800;
 }
