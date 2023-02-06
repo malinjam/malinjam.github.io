@@ -182,6 +182,8 @@ body {
   font-size: 2vw;
   font-weight: 500;
   margin: 10%;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 .color-textbox {
   background-color: #233b52;
@@ -243,4 +245,8 @@ img{
   width: 25vw;
   height: 30vw;
   margin-top: 5%;
+}
+
+.title-project{
+  font-size: 3vw;
 }
