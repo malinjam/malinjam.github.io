@@ -206,7 +206,6 @@ body {
 
 ul {
   list-style: none;
-  padding-left: 20vw;
 }
 
 li {
@@ -241,5 +240,7 @@ li {
   color: #ff6800;
 }
 img{
-  width:20vw;
+  width: 25vw;
+  height: 30vw;
+  margin-top: 5%;
 }
