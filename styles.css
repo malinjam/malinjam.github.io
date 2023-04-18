@@ -11,6 +11,15 @@ body {
   margin-top:10%;
 }
 
+a {
+  color: #71bf79;
+  text-decoration: none;
+  font-style: italic;
+}
+a:hover{
+  color: #ff6800;
+}
+
 .box-grid {
   display: grid;
   grid-template-columns: 33% 33% 33%;
