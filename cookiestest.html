@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <div id=popUpOuter>
+    <div class=popUpContainer>
+      <img class=popUpImg src="https://th.bing.com/th/id/OIP.mURrmR_uNDX74zSE3_tbwAHaFj?rs=1&pid=ImgDetMain"></img>
+          <div style="display:flex; flex-direction:column;">
+          <header> <b>Popup is available! </b></header>
+            Whatever things you want to write will appear here!
+    </div>
+    </div>
+    </div>
+    
+  <body>
+    <h1>This is a heading</h1>
+    <button onclick="onClick()">press here</button>
+    <p>This is a paragraph.</p>
+  </body>
+</html>
+
+<script>
+
+  //likely this is all correct,but it can't be tested without hosting the page remotely 
+  function getCookie(name){
+    let cname=name+"=";
+    console.log(cname);
+    let cookie=decodeURIComponent(document.cookie).split(";");
+    console.log(cookie);
+     for(let i=0; i<cookie.length;i++){
+      console.log("cookie length: "+cookie.length)
+      let c=cookie[i];
+      console.log("cookie part", i , cookie[i]);
+      while(c.charAt(0)==' '){
+        c=c.substring(1);
+        console.log(c);
+      }
+      if(c.indexOf(name)==0){
+        console.log("cookie found");
+        return c.substring(name.length, c.length);
+      }
+     }
+     console.log("cookie not found");
+     return "";
+  }
+
+
+
+
+function checkCookie() {
+  
+    let popup = getCookie("Popup");                                            //collects cookie
+    console.log("cookie name:", popup);                                                    //debug
+    let display = document.getElementById("popUpOuter");                               //det the popup
+    if (popup == false){ 
+      display.style="display:none";
+      return;                                                            //if already shown dont show again
+    }
+    else {
+        
+        display.style = "display:block";                                                  //display the popup
+        if (popup == true) { return; }                                                     //popup has not been acted on
+        setCookie(true);                                                                   //create a cookie if it is missing
+    }
+}
+
+function setCookie(value) {
+  console.log("setting cookie to:" +value);
+    const expiration = new Date();
+    expiration.setTime(expiration.getTime() + 2592000000);                                 //expires in 30 days 
+    let exp="expires="+expiration.toUTCString();
+    document.cookie = "Popup=" + value + "; " + exp + "; path=/"; //creates the cookie
+    console.log( "Popup=" + value + "; " + exp + "; path=/","XXXX");
+    console.log(getCookie("Popup=") + "cookie");
+}
+
+function onClick() {                                                                       //to be added to the button click in the menu
+  console.log("click");
+  setCookie(false);
+  checkCookie();
+}
+
+</script>
+
+    
