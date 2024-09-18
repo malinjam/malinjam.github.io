@@ -13,7 +13,7 @@
     </div>
     </div>
     
-  <body window.onload="checkCookie()">
+  <body>
     <h1>This is a heading</h1>
     <button onclick="onClick()">press here</button>
     <p>This is a paragraph.</p>
@@ -21,7 +21,7 @@
 </html>
 
 <script>
-
+window.onload=checkCookie();
   //likely this is all correct,but it can't be tested without hosting the page remotely 
   function getCookie(name){
     let cname=name+"=";
