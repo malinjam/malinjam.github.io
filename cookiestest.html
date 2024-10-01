@@ -44,7 +44,8 @@ function checkCookie() {
     
     if (popup == false){ 
       console.log("check found cookie=false");
-      document.getElementsByClassName("popUpOuter")[0].remove();
+      if(document.getElementsByClassName("popUpOuter")[0]){
+      document.getElementsByClassName("popUpOuter")[0].remove();}
       return;                                                                              //if already shown dont show again
     }
     else {
