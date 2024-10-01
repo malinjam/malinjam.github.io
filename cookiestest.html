@@ -41,10 +41,11 @@
 function checkCookie() {
   console.log("check cookie run");
     let popup = getCookie("Menu-Popup");                                            //collects cookie
-    
+    console.log("popup: "+popup);
     if (popup == false){ 
       console.log("check found cookie=false");
       if(document.getElementsByClassName("popUpOuter")[0]){
+        console.log("get element:"+document.getElementsByClassName("popUpOuter")[0]);
       document.getElementsByClassName("popUpOuter")[0].remove();}
       return;                                                                              //if already shown dont show again
     }
