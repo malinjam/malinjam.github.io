@@ -19,6 +19,7 @@
 }
 
   function getCookie(name){                                                                 //READS THE COOKIES AND LOOKS FOR THE GIVEN ONE 
+    console.log("get cookie run")
     let cname=name+"=";
     let cookie=decodeURIComponent(document.cookie).split(";");
      for(let i=0; i<cookie.length;i++){
@@ -27,9 +28,11 @@
         c=c.substring(1);
       }
       if(c.indexOf(name)==0){
+        console.log("get found cookie");
         return c.substring(name.length, c.length);                                          //If found return the value
       }
      }
+    console.log("get did not found cookie");
      return "";
   }
 
@@ -40,10 +43,12 @@ function checkCookie() {
     let popup = getCookie("Menu-Popup");                                            //collects cookie
     
     if (popup == false){ 
+      console.log("check found cookie=false");
       document.getElementsByClassName("popUpOuter")[0].remove();
       return;                                                                              //if already shown dont show again
     }
     else {
+      console.log("check found cookie=true");
       const pu=document.createElement("div");
       pu.innerHTML="<div class=popUpOuter><div class=popUpContainer><img class=popUpImg></img><div style='display:flex; flex-direction:column;'><header> <b> Now the Menu is available! </b></header>ty rtyrtd rturtutdyjuytd uytjyj ytjty. eerhrhr jrt.j rtjrtjrtjh-eheh.jjethhrt </div></div></div>";
       document.getElementsByClassName("container")[0].appendChild(pu);                //display the popup
