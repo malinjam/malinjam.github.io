@@ -29,6 +29,7 @@
       }
       if(c.indexOf(name)==0){
         console.log("get found cookie");
+         console.log("name: "+name+" value: "+c.substring(name.length, c.length));
         return c.substring(name.length, c.length);                                          //If found return the value
       }
      }
