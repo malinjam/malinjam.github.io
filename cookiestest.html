@@ -46,7 +46,7 @@ function checkCookie() {
       const pu=document.createElement("div");
       pu.innerHTML="<div class=popUpOuter><div class=popUpContainer><img class=popUpImg></img><div style='display:flex; flex-direction:column;'><header> <b> Now the Menu is available! </b></header>ty rtyrtd rturtutdyjuytd uytjyj ytjty. eerhrhr jrt.j rtjrtjrtjh-eheh.jjethhrt </div></div></div>";
       document.getElementsByClassName("container")[0].appendChild(pu);                //display the popup
-        if (popup == true) { return; }                                                     //popup has not been acted on
+        if (popup == "true") { return; }                                                     //popup has not been acted on
         setCookie(true);                                                                   //create a cookie if it is missing
     }
 }
