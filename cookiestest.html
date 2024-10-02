@@ -41,7 +41,7 @@
 
 function checkCookie() {
   console.log("check cookie run");
-    let popup = getCookie("Menu-Popup");                                            //collects cookie
+    let popup = getCookie("Popup");                                            //collects cookie
     console.log("popup: "+popup);
     if (popup == "false"){ 
       console.log("check found cookie=false");
@@ -50,7 +50,7 @@ function checkCookie() {
       document.getElementsByClassName("popUpOuter")[0].remove();}
       return;                                                                              //if already shown dont show again
     }
-    else {
+    else{
       console.log("check found cookie=true");
       const pu=document.createElement("div");
       pu.innerHTML="<div class=popUpOuter><div class=popUpContainer><img class=popUpImg></img><div style='display:flex; flex-direction:column;'><header> <b> Now the Menu is available! </b></header>ty rtyrtd rturtutdyjuytd uytjyj ytjty. eerhrhr jrt.j rtjrtjrtjh-eheh.jjethhrt </div></div></div>";
