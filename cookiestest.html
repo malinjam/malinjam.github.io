@@ -15,13 +15,10 @@
 
 <script>
   window.onload = () =>{
-    console.log("attempt 3");
-
   checkCookie(); 
 }
 
-  function getCookie(name){                                                                 //READS THE COOKIES AND LOOKS FOR THE GIVEN ONE 
-    console.log("get cookie run")
+  function getCookie(name){
     let cname=name+"=";
     let cookie=decodeURIComponent(document.cookie).split(";");
      for(let i=0; i<cookie.length;i++){
@@ -30,30 +27,22 @@
         c=c.substring(1);
       }
       if(c.indexOf(name)==0){
-        console.log("get found cookie");
-         console.log("name: "+name+" value: "+c.substring(name.length, c.length));
-        return c.substring(name.length, c.length);                                          //If found return the value
+       return c.substring(name.length, c.length);                                          //If found return the value
       }
      }
-    console.log("get did not found cookie");
-     return "";
+    return "";
   }
 
 
 
 function checkCookie() {
-  console.log("check cookie run");
-    let popup = getCookie("Popup=");                                            //collects cookie
-    console.log("popup: "+popup);
+  let popup = getCookie("Popup=");                                            //collects cookie
     if (popup == "false"){ 
-      console.log("check found cookie=false");
       if(document.getElementsByClassName("popUpOuter")[0]){
-        console.log("get element:"+document.getElementsByClassName("popUpOuter")[0]);
-      document.getElementsByClassName("popUpOuter")[0].remove();}
+        document.getElementsByClassName("popUpOuter")[0].remove();}
       return;                                                                              //if already shown dont show again
     }
     else{
-      console.log("check found cookie is not false");
       const pu=document.createElement("div");
       pu.innerHTML="<div class=popUpOuter><div class=popUpContainer><img class=popUpImg></img><div style='display:flex; flex-direction:column;'><header> <b> Now the Menu is available! </b></header>ty rtyrtd rturtutdyjuytd uytjyj ytjty. eerhrhr jrt.j rtjrtjrtjh-eheh.jjethhrt </div></div></div>";
       document.getElementsByClassName("container")[0].appendChild(pu);                //display the popup
@@ -63,17 +52,13 @@ function checkCookie() {
 }
 
 function setCookie(value) {
-  console.log("setting cookie to:" +value);
-    const expiration = new Date();
+  const expiration = new Date();
     expiration.setTime(expiration.getTime() + 2592000000);                                 //expires in 30 days 
     let exp="expires="+expiration.toUTCString();
     document.cookie = "Popup=" + value + "; " + exp + "; path=/"; //creates the cookie
-    console.log( "Popup=" + value + "; " + exp + "; path=/","XXXX");
-    console.log(getCookie("Popup=") + "cookie");
 }
 
 function onClick() {                                                                       //to be added to the button click in the menu
-  console.log("click");
   checkCookie();
 }
 </script>
